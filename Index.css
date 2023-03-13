@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #81ecec;
+}
+
+.search,.Quote{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#note-contain{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#default-note button, #Quote button{
+    background-color: #262b2d;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: .5rem;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+
+}
+
+.note,#default-note{
+    width: 40rem;
+    height: 15rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 3rem 1rem ;
+}
+
+.note-header,.default-header{
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: .3rem;
+    display: flex;
+    justify-content: end;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.note-header i,.default-icons i {
+    padding: .5rem;
+    margin: .3rem;
+    cursor: pointer;
+
+}
+
+.note textarea ,#default-note textarea{
+    border: none;
+    width: 100%;
+    height: inherit;
+    resize: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: .5rem;
+}
+
+.note textarea:focus,#default-note textarea:focus {
+    border: 0;
+    outline: 0;
+}
+
+@media screen and (max-width:470px) {
+}
+.display{
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    margin: .5rem;
+}
+i{
+    width: inherit;
+    height: inherit;
+}

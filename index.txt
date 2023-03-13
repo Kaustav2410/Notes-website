@@ -1,0 +1,56 @@
+// const saveNotes = () => {
+//     titles=document.querySelector("#Addtitle");
+//     notes = document.querySelector("#Addtext");
+//     const data = [];
+    
+//     let myobj={
+//         title:titles,
+//         text:notes.value
+//     }
+    
+//     if (data.length === 0) {
+//         localStorage.removeItem("notes");
+//     } else {
+//         localStorage.setItem("notes", JSON.stringify(data));
+//     }
+// }
+
+
+// const addNote = (text = "") => {
+//     const note = document.createElement("div");
+//     note.classList.add("note")
+//     note.innerHTML = `
+//     <div class="note-header">
+//     <div class="title">
+//         <input type="text" placeholder="Add Title" id="Addtitle" style="color: white;">
+//     </div>
+//     <div>
+//         <i class="save fas fa-save"></i>
+//         <i class="trash fas fa-trash"></i> 
+//     </div>
+//     </div>
+//     <textarea placeholder="Add text">${text}</textarea>
+//     `;
+
+//     note.querySelector(".trash").addEventListener(
+//         "click",
+//         function() {
+//             note.remove()
+//             saveNotes()
+//         }
+//     )
+//     note.querySelector(".save").addEventListener(
+//         "click",
+//         function() {
+//             saveNotes()
+//         }
+//     )
+//     // note.querySelector("textarea").addEventListener(
+//     //     "focusout",
+//     //     function() {
+//     //         saveNotes()
+//     //     }
+//     // )
+//     main.appendChild(note);
+//     saveNotes()
+// }

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d05a43a372.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway:wght@300&display=swap');
+      </style>
+    <title>Notes Website</title>
+</head>
+<body>
+    <!-- <video autoplay muted loop src="mylivewallpapers.com-Japanese-Street-Cherry-Blossom.mp4" type="video/mp4" id="background-video"></video> -->
+    <div class="container">
+        <div id="header">
+            <div class="search">
+                <form >
+                    <input type="search" placeholder="search" id="searchbox">
+                    <button id="searchbutton">Search</button>
+                </form>
+                <h2>
+                    What's Up<input type="text" id="name" placeholder="your name ">
+                </h2>
+            </div>
+
+            <div class="Quote">
+                <button id="quotes">New Quote</button>
+                    <h2 class="display"></h2>
+            </div>
+                
+        </div>
+
+        <div id="default-note">
+            <div class="default-header">
+                <div id="title">
+                    <input type="text" placeholder="Add Title" id="Addtitle" style="color: white;">
+                </div>
+                <div class="default-icons"> 
+                </div>
+            </div>
+            <textarea placeholder="Add text" id="Addtext"></textarea>         
+            <button id="Add">Add new Note <i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div id="note-contain">
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- 1.provide a few fonts options in a button or a drop down menu so that the user can change the font accordingly to his/her liking
+2.Add animation when deleting the notes 
+3.Randomly gives an motivation quote when load the site
+4.Can add title to the note 
+-->
